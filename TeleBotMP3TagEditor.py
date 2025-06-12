@@ -14,6 +14,8 @@ from mutagen.mp3 import MP3
 import subprocess
 from dotenv import load_dotenv
 
+load_dotenv()
+
 API_TOKEN = os.getenv("API_TOKEN")
 
 bot = Bot(token=API_TOKEN)

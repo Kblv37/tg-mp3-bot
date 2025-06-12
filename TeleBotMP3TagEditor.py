@@ -128,15 +128,15 @@ async def handle_title(message: types.Message, state: FSMContext):
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
 
-import threading
-import http.server
-import socketserver
-import os
+# import threading
+# import http.server
+# import socketserver
+# import os
 
-def run_dummy_server():
-    PORT = int(os.environ.get("PORT", 8080))
-    Handler = http.server.SimpleHTTPRequestHandler
-    with socketserver.TCPServer(("", PORT), Handler) as httpd:
-        httpd.serve_forever()
+# def run_dummy_server():
+#     PORT = int(os.environ.get("PORT", 8080))
+#     Handler = http.server.SimpleHTTPRequestHandler
+#     with socketserver.TCPServer(("", PORT), Handler) as httpd:
+#         httpd.serve_forever()
 
-threading.Thread(target=run_dummy_server).start()
+# threading.Thread(target=run_dummy_server).start()
